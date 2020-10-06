@@ -1,4 +1,4 @@
-<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Detalle</button>
+<button class="btn btn-lg btn-outline-danger elite-text" (click)="open(content)">Detalle</button>
 
 <ng-template #content let-modal>
     <div class="modal-header">
@@ -13,6 +13,9 @@
         <div class="d-inline p-2">{{ product.price }}</div>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+        <div class="d-flex justify-content-between">
+            <p class="lead contact">Contactanos al 76987216</p>
+            <button type="button" class="btn btn-outline-danger elite-text" (click)="modal.close('Save click')">Ok</button>
+        </div>
     </div>
 </ng-template>

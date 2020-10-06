@@ -23,7 +23,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
   imports: [
     BrowserModule,
     HttpClientModule,
-    InMemoryWebApiModule.forRoot(AppData, { delay: 1000 }),
+    InMemoryWebApiModule.forRoot(AppData),
     NgbModule
   ],
   providers: [
